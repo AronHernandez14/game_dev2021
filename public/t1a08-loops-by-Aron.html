@@ -1,4 +1,4 @@
-Version 0.0.1
+Version 0.0.3
 
 <h2 align=center>t1a08-loops-by-Aron.html</h2>
 
@@ -48,3 +48,17 @@ Max loops: <input id="myNum02" type=number value="16" ><br>
 <input type=button value="Basic For Loop with Decisions" onclick="{
    document.getElementById('myDiv01').innerHTML = ''
    let myTemp = ''
+                                                                  
+   let myMax = parseInt(document.getElementById('myNum01').value)
+                                                                  
+   for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+      if (myLoop * 4 > myMax){
+         document.getElementById('Div01').innerHTML += ' cool '
+    }
+        
+    myTemp += 'Loop number: ' + myLoop + '<br>'
+   }
+   document.getElementById('myDiv02).innerHTML = my Temp
+}">
+
+<div id ="myDiv02">...</div>
