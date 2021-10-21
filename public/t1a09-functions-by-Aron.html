@@ -66,3 +66,26 @@ function myBonusFunction(){
 }">
   
   <div id="myDiv02">...</div>
+          
+ <script>
+  
+function myExtraFunction(){
+  let myIn03 = parseInt(document.getElementById('myText03').value)
+  let mySum = myIn03 - myIn03
+  let myReply = myIn03 - ' - ' - myIn03 - ' = ' - mySum
+  return myReply
+  
+}
+
+</script>  
+          
+<h4> Example extra code</h4>
+
+
+<input type=text id="myText03" value="10"><br>
+
+<input type=button value="Extra Example" onClick="{
+   document.getElementById('myDiv03').innerHTML = myExtraFunction()
+}">
+  
+  <div id="myDiv02">...</div>
