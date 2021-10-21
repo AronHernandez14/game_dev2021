@@ -41,11 +41,14 @@ For Global variables Mr. Ellis prefers to use document.myVarName
 
 <div id="myDiv01">...</div>
           
-<h4> Example Variable </h4><br>
-var msg; 
-msg = "Hello JavaScript!"; // assigned a string value
-alert(msg); // access a variable
+var greet = "Hello " // global variable
 
-//the following declares and assign a numeric value
-var num = 100; 
-var hundred = num;  // assigned a variable to varible
+function myfunction(){
+    var msg = "JavaScript!"; 
+    alert(greet + msg); //can access global and local variable
+}
+
+myfunction();
+		
+alert(greet);//can access global variable
+alert(msg); //error: can't access local variable
