@@ -43,5 +43,26 @@ function myGrabNumber(){
 }">
   
   <div id="myDiv01">...</div>
+
+ <script>
+  
+function myBonusFunction(){
+  let myIn02 = parseInt(document.getElementById('myText02').value)
+  let mySum = myIn02 + myIn02
+  let myReply = myIn02 + ' + ' + myIn02 + ' = ' + mySum
+  return myReply
+  
+}
+
+</script>  
           
-<script>
+<h4> Example working code</h4>
+
+
+<input type=text id="myText02" value="5"><br>
+
+<input type=button value="Bonus Example" onClick="{
+   document.getElementById('myDiv02').innerHTML = myExampleFunction()
+}">
+  
+  <div id="myDiv02">...</div>
