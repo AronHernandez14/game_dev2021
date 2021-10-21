@@ -19,9 +19,9 @@ function myExampleFunction(){
  <script>
   
 function myExampleFunction(){
-  let myIn01 = parseInt(document.getElementById('myText02').value)
-  let mySum = myIn01 + myIn02
-  let myReply = myIn01 + ' + ' + myIn02 + ' = ' + mySum
+  let myIn02 = parseInt(document.getElementById('myText02').value)
+  let mySum = myIn02 + myIn02
+  let myReply = myIn02 + ' + ' + myIn02 + ' = ' + mySum
   return myReply
   
 }
@@ -55,3 +55,12 @@ function myGrabNumber(){
 }">
   
   <div id="myDiv01">...</div>
+          
+<input type=text id="myText02" value="7"><br>
+
+<input type=button value="Function Example" onClick="{
+   document.getElementById('myDiv02').innerHTML = myExampleFunction()
+}">
+  
+  <div id="myDiv01">...</div>
+
