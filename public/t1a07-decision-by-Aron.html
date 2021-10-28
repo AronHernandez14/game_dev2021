@@ -70,12 +70,12 @@ if (myHour < 18) {
        document.getElementById('myDiv02').innerHTML = myIn02 + ' is less than 4'}
    }">
    
-   <input type=button value="Complex if" onclick="{
-       let myIn02 = parseFloat(document.getElementById('myNum02').value)
-       if ((myIn01 != 4 || myIn02 > -4) && myIn01 <=100 ){
-           document.getElementById('myDiv02').innerHTML = myIn02 + ' is complex'
-       } else {
-           document.getElementById('myDiv02').innerHTML = myIn02 + ' is not complex'}
-   }">
+<input type=button value="Complex if" onclick="{
+    let myIn02 = parseFloat(document.getElementById('myNum02').value)
+    if ((myIn01 != 4 || myIn02 > -4) && myIn01 <=100 ){
+        document.getElementById('myDiv02').innerHTML = myIn02 + ' is complex'
+    } else {
+        document.getElementById('myDiv02').innerHTML = myIn02 + ' is not complex'}
+}">
 
 <div id="myDiv02">...</div>
