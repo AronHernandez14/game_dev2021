@@ -48,7 +48,7 @@ if (myHour < 18) {
    }">
 
 <div id="myDiv01">...</div>
-}
+
 </pre>
 
 <h4> Example working code</h4>
@@ -59,7 +59,7 @@ if (myHour < 18) {
     let myIn02 = parseFloat(document.getElementById('myNum02').value)
     if (myIn02 >= 4){
         document.getElementById('myDiv02').innerHTML = myIn02 + ' is greater than 4'
-    }
+                                                                            
 }">
 
 <input type=button value="if...else" onclick="{
@@ -67,15 +67,15 @@ if (myHour < 18) {
    if (myIn02 >= 4){
        document.getElementById('myDiv02').innerHTML = myIn02 + ' is greater than 4'
    } else {
-       document.getElementById('myDiv01').innerHTML = myIn02 + ' is less than 4'}
+       document.getElementById('myDiv02').innerHTML = myIn02 + ' is less than 4'}
    }">
    
    <input type=button value="Complex if" onclick="{
        let myIn02 = parseFloat(document.getElementById('myNum02').value)
-       if ((myIn01 != 4 || myIn02 > -4) && myIn01 <=12 ){
-           document.getElementById('myDiv02').innerHTML = myIn02 + ' 1000 iq'
+       if ((myIn01 != 4 || myIn02 > -4) && myIn01 <=100 ){
+           document.getElementById('myDiv02').innerHTML = myIn02 + ' is complex'
        } else {
-           document.getElementById('myDiv02').innerHTML = myIn02 + ' does not compute'}
+           document.getElementById('myDiv02').innerHTML = myIn02 + ' is not complex'}
    }">
 
 <div id="myDiv02">...</div>
