@@ -5,7 +5,7 @@
   </body>
 </html>
 
-Version 0.1.1
+Version 0.1.2
 <h2 align=center>t1a10-Events-by-Aron.html</h2>
 
 <a href="https://way2tutorial.com/html/html5_events_handler_list.php">Good reference
@@ -95,7 +95,6 @@ Events are HTML code that activates Javascript code
 }"    > You are Honest</b>
      
 <br>                   
-
  
 <input type=text id="myText05" value="7"><br>
   
@@ -114,7 +113,25 @@ Events are HTML code that activates Javascript code
 }"    > You are Humble</b>
      
 <br>                   
+ 
+<input type=text id="myText06" value="8"><br>
+  
+<input type=button value="Example onDragStart" onClick="{
+   document.getElementById('myB06').innerHTML = 'You are Happy'
+}"     onDragStart="{
+   document.getElementById('myB06').innerHTML = 'You are Violent'
+}"    > You are Happy</b>
+  
+<div id="myDiv06">...</div>
+  
+<b id="myB06" onDragStart="{
+   document.getElementById('myB06').innerHTML = 'You are Happy'
+}"     onDragStart="{
+   document.getElementById('myB06').innerHTML = 'You are Violent'
+}"    > You are Happy</b>
+     
+<br>         
 
 You do at least 8 other events:<br>
 []onClick, onDbClick, onChange, onBlue, onFocus, []onMouseMove, []onTouch,
-[]onKeyDown. []onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove
+[]onKeyDown. []onKeyPress, []onDragStart, onTouchStart, onTouchEnd, onTouchMove
