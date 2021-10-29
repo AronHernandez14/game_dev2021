@@ -5,7 +5,7 @@
   </body>
 </html>
 
-Version 0.0.3
+Version 0.0.4
 <h2 align=center>t1a10-Events-by-Aron.html</h2>
 
 <a href="https://way2tutorial.com/html/html5_events_handler_list.php">Good reference
@@ -40,7 +40,26 @@ Events are HTML code that activates Javascript code
   
   
 <br>
+
+<input type=text id="myText02" value="4"><br>
   
+<input type=button value="Example onMouseMove" onMouseMove="{
+   document.getElementById('myB02').innerHTML = 'This is bold'
+}"     onMouseOver="{
+   document.getElementById('myB02').innerHTML = 'This is cool'
+}"    > This is bold</b>
+  
+<div id="myDiv02">...</div>
+  
+<b id="myB01" onMouseOut="{
+   document.getElementById('myB02').innerHTML = 'You are Cool'
+}"     onMouseOver="{
+   document.getElementById('myB02').innerHTML = 'Just Kidding'
+}"    > This is bold</b>
+  
+  
+<br>     
+     
 You do at least 8 other events:<br>
 onClick, onDbClick, onChange, onBlue, onFocus, onMouseMove, onTouch,
 onKeyDown. onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove
