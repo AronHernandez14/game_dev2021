@@ -43,19 +43,19 @@ Events are HTML code that activates Javascript code
 
 <input type=text id="myText02" value="4"><br>
   
-<input type=button value="Example onMouseMove" onMouseMove="{
-   document.getElementById('myB02').innerHTML = 'This is bold'
-}"     onMouseOver="{
-   document.getElementById('myB02').innerHTML = 'This is cool'
-}"    > This is bold</b>
-  
-<div id="myDiv02">...</div>
-  
-<b id="myB01" onMouseOut="{
+<input type=button value="Example onMouseMove" onClick="{
    document.getElementById('myB02').innerHTML = 'You are Cool'
 }"     onMouseOver="{
    document.getElementById('myB02').innerHTML = 'Just Kidding'
-}"    > This is bold</b>
+}"    > Just Kidding</b>
+  
+<div id="myDiv02">...</div>
+  
+<b id="myB02" onMouseOut="{
+   document.getElementById('myB02').innerHTML = 'You are Cool'
+}"     onMouseOver="{
+   document.getElementById('myB02').innerHTML = 'Just Kidding'
+}"    > Just Kidding</b>
   
   
 <br>     
