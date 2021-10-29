@@ -95,7 +95,26 @@ Events are HTML code that activates Javascript code
 }"    > You are Honest</b>
      
 <br>                   
+
+ 
+<input type=text id="myText05" value="7"><br>
+  
+<input type=button value="Example onTouch" onClick="{
+   document.getElementById('myB05').innerHTML = 'You are Humble'
+}"     onTouch="{
+   document.getElementById('myB05').innerHTML = 'You are Vain'
+}"    > You are Humble</b>
+  
+<div id="myDiv05">...</div>
+  
+<b id="myB05" onTouch="{
+   document.getElementById('myB05').innerHTML = 'You are Humble'
+}"     onTouch="{
+   document.getElementById('myB05').innerHTML = 'You are Vain'
+}"    > You are Humble</b>
      
+<br>                   
+
 You do at least 8 other events:<br>
 []onClick, onDbClick, onChange, onBlue, onFocus, []onMouseMove, onTouch,
 []onKeyDown. []onKeyPress, onDragStart, onTouchStart, onTouchEnd, onTouchMove
