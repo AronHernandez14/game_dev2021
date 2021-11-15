@@ -62,6 +62,8 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 }">
 
 <div id="myDiv01">...</div>
+    
+    
 
 <script>
 
@@ -103,3 +105,47 @@ Nothing: <input type=text id="myText02" value="Not useless at the moment"><br>
 }">
 
 <div id="myDiv02">...</div>
+
+    
+    
+<script>
+
+ class myAnimal03 {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv03').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal03
+  
+</script>    
+    
+<h4> Example working Code</h4>
+
+<input type=button value="Set and Show Class Animal" onClick="{
+                                                                            
+  myParrot = new myAnimal03('Carl', 18)
+  myParrot.myShow()
+                                                                            
+}">
+
+<h4> Extending Class code</h4>
+Nothing: <input type=text id="myText03" value="Not useless"><br>
+
+<input type=button value="Class Animal03" onClick="{
+                                                                
+ class myParrot extends myAnimal02 {
+     myShow(){
+       document.getElementById('myDiv03').innerHTML = this.myName + ' is a good parrot who is ' + this.myAge + ' years old<br>'
+    }
+}    // end extended class myParrot
+                                                                                                                         
+   myPet03 = new myParrot('Jeffy', 29)
+   myPet03.myShow()
+                                                                
+}">
+
+<div id="myDiv03">...</div>
+    
