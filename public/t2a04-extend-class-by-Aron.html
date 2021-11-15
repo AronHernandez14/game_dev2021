@@ -19,7 +19,7 @@
   
 </script>
 
-Version 0.0.7
+Version 0.0.8
 <h2 align=center>t2a04-extend-class-by-Aron.html</h2>
 
 Extending a pre-existing Class<br>
@@ -63,13 +63,25 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <div id="myDiv01">...</div>
 
-    
+<script>
+
+ class myAnimal02 {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv02').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal02
+  
+</script>    
     
 <h4> Example working Classes code</h4>
 
 <input type=button value="Class Set and Show Class Animal" onClick="{
                                                                             
-  myDog = new myAnimal('Mars', 5)
+  myDog = new myAnimal02('Mars', 5)
   myDog.myShow()
                                                                             
 }">
@@ -77,9 +89,9 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <h4> Example extending Class code</h4>
 Nothing: <input type=text id="myText02" value="Not useless at the moment"><br>
 
-<input type=button value="Class Animal" onClick="{
+<input type=button value="Class Animal02" onClick="{
                                                                 
- class myDog extends myAnimal {
+ class myDog extends myAnimal02 {
      myShow(){
        document.getElementById('myDiv02').innerHTML = this.myName + ' is a great dog who is ' + this.myAge + ' years old<br>'
     }
