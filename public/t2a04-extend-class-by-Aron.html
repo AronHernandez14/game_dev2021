@@ -77,16 +77,16 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <h4> Example extending Class code</h4>
 Nothing: <input type=text id="myText02" value="Not useless at the moment"><br>
 
-<input type=button value="Extend Class Animal" onClick="{
+<input type=button value="Class Animal" onClick="{
                                                                 
- class myCat extends myAnimal02 {
-     myShow02(){
-       document.getElementById('myDiv02').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
+ class myDog extends myAnimal {
+     myShow(){
+       document.getElementById('myDiv02').innerHTML = this.myName + ' is a great dog who is ' + this.myAge + ' years old<br>'
     }
 }    // end extended class myDog
                                                                                                                          
    myPet02 = new myDog('Scruffy', 14)
-   myPet02.myShow02()
+   myPet02.myShow()
                                                                 
 }">
 
