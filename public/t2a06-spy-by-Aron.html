@@ -1,4 +1,4 @@
-Version 0.0.6
+Version 0.0.7
 
 <h1 align=center>t2a06-spy-name.html</h1>
 <textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
@@ -6,7 +6,7 @@ Version 0.0.6
 
 <input type=button value="encrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea01').value.toLowerCase().join('')
+   myString = document.getElementById('myArea01').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]                                      
       if (myString[myLoop] == 'a') {myTemp  = 'b'}                                                                                                     
@@ -21,7 +21,7 @@ Version 0.0.6
                                             
       myString[myLoop] = myTemp
    }
-   document.getElementById('myArea02').value = myString.split('')
+   document.getElementById('myArea02').value = myString.join('')
 }"><br><br>
 
 
