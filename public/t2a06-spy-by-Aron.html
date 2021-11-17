@@ -30,7 +30,7 @@ Version 0.0.7
 
 <input type=button value="decrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea02').value.toLowerCase().join('')
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]                                      
       if (myString[myLoop] == 'a') {myTemp  = 'b'}                                                                                                     
@@ -45,7 +45,7 @@ Version 0.0.7
                                             
       myString[myLoop] = myTemp
    }
-   document.getElementById('myArea03').value = myString.split('')
+   document.getElementById('myArea03').value = myString.join('')
 }"><br><br>
 
 
