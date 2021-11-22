@@ -5,7 +5,7 @@
   </body>
 </html>
 
-Version 0.0.4
+Version 0.0.5
 <h2 align=center>t2a02-objects-by-Aron.html</h2>
 
 <a href="">Good reference to Javascript Object</a><br>
@@ -47,3 +47,27 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
     
     
 <br>
+<h4> Example working Objects code</h4>
+
+Nothing: <input type=text id="myText01" value="Triva Time: Shows"><br>
+
+
+<input type=button value="Who is friends with talking construction machines?" onClick="{
+                                                                
+  let myPerson = {
+    'firstName' : 'Bob the Builder',
+    'lastName'  : 'None',
+    'age'       : 41,
+    'eyeColor'  : 'black'
+}    
+                                                                
+   document.getElementById('myDiv02').innerHTML = '<br>myPerson Object has properties: <br>'
+   document.getElementById('myDiv02').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
+                                                                
+}">      
+    
+    <div id="myDiv02">...</div>
+    
+    
+<br>
+
