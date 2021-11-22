@@ -5,7 +5,7 @@
   </body>
 </html>
 
-Version 0.0.5
+Version 0.0.6
 <h2 align=center>t2a02-objects-by-Aron.html</h2>
 
 <a href="">Good reference to Javascript Object</a><br>
@@ -47,7 +47,7 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
     
     
 <br>
-<h4> Example working Objects code</h4>
+<h4> Quiz 1</h4>
 
 Nothing: <input type=text id="myText02" value="Triva Time: Shows"><br>
 
@@ -70,7 +70,7 @@ Nothing: <input type=text id="myText02" value="Triva Time: Shows"><br>
     
     
 <br>
-<h4> Example working Objects code</h4>
+<h4> Quiz 2</h4>
 
 Nothing: <input type=text id="myText03" value="Triva Time: Shows"><br>
 
@@ -93,5 +93,26 @@ Nothing: <input type=text id="myText03" value="Triva Time: Shows"><br>
     
     
 <br>
+<h4> Quiz 3</h4>
+
+Nothing: <input type=text id="myText04" value="Triva Time: Shows"><br>
 
 
+<input type=button value="Who doesn't do anything but shows up?" onClick="{
+                                                                
+  let myPerson = {
+    'firstName' : 'Tuxedo Mask',
+    'lastName'  : 'None',
+    'age'       : 18,
+    'eyeColor'  : 'White'
+}    
+                                                                
+   document.getElementById('myDiv04').innerHTML = '<br>The Answer: <br>'
+   document.getElementById('myDiv04').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
+                                                                
+}">      
+    
+    <div id="myDiv04">...</div>
+    
+    
+<br>
