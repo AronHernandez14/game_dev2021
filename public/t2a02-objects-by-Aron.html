@@ -49,7 +49,7 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <br>
 <h4> Example working Objects code</h4>
 
-Nothing: <input type=text id="myText01" value="Triva Time: Shows"><br>
+Nothing: <input type=text id="myText02" value="Triva Time: Shows"><br>
 
 
 <input type=button value="Who is friends with talking construction machines?" onClick="{
@@ -70,4 +70,28 @@ Nothing: <input type=text id="myText01" value="Triva Time: Shows"><br>
     
     
 <br>
+<h4> Example working Objects code</h4>
+
+Nothing: <input type=text id="myText03" value="Triva Time: Shows"><br>
+
+
+<input type=button value="Who steals stuff but stops when told?" onClick="{
+                                                                
+  let myPerson = {
+    'firstName' : 'Swiper the Fox',
+    'lastName'  : 'None',
+    'age'       : 12,
+    'eyeColor'  : 'brown'
+}    
+                                                                
+   document.getElementById('myDiv03').innerHTML = '<br>The Answer: <br>'
+   document.getElementById('myDiv03').innerHTML += 'firstName: ' + myPerson.firstName + '<br>'
+                                                                
+}">      
+    
+    <div id="myDiv03">...</div>
+    
+    
+<br>
+
 
