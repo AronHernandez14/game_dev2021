@@ -15,7 +15,7 @@ that work on the variables (called Methods)
     myShow(){
        document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
     }
-   myDog = new mtAnimal('Snickers', 5)
+   myDog = new myAnimal('Snickers', 5)
    myDog.myShow()
    
 </pre>
@@ -25,7 +25,7 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 <input type=button value="Example Class Set and Show Class Animal" onClick="{
  class myAnimal {
     constructor(passName, passAge) {
-       this.myName = passAge;
+       this.myName = passName;
        this.myAge = passAge;
     }
     myShow(){
@@ -45,7 +45,7 @@ Nothing: <input type=text id="myText02" value="Dog Names in 2005"><br>
 <input type=button value="Class Set and Show Class Animal" onClick="{
  class myAnimal {
     constructor(passName, passAge) {
-       this.myName = passAge;
+       this.myName = passName;
        this.myAge = passAge;
     }
     myShow(){
@@ -58,3 +58,23 @@ Nothing: <input type=text id="myText02" value="Dog Names in 2005"><br>
 }">
 
 <div id="myDiv02">...</div>                                                                         
+
+
+<h4>Working Classes code</h4>
+Nothing: <input type=text id="myText03" value="Cat Names in 1996"><br>
+<input type=button value="Show Class Animal" onClick="{
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv03').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+   myDog = new myAnimal('Bob', 8)
+   myDog.myShow()
+                                                                            
+}">
+
+<div id="myDiv03">...</div>                                                                         
