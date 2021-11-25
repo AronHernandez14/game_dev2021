@@ -4,7 +4,7 @@
      <document body style color="style-color:#ff66ff;";>
      </body>
 </html>
-Version 0.0.6
+Version 0.0.7
 <h2 align=center>t2a03-Classes-by-Aron.html</h2>
 
 <a href="">Find a good reference to Javascript Classes</a><br>
@@ -127,7 +127,7 @@ Atari: <input type=text id="myText05" value="Worst Game in 1983"><br>
 
 
 <h4>1985</h4>
-Nintendo: <input type=text id="myText03" value="Best Game in 1985"><br>
+Nintendo: <input type=text id="myText06" value="Best Game in 1985"><br>
 <input type=button value="Show Character" onClick="{
  class myAnimal {
     constructor(passName, passAge) {
@@ -135,7 +135,7 @@ Nintendo: <input type=text id="myText03" value="Best Game in 1985"><br>
        this.myAge = passAge;
     }
     myShow(){
-       document.getElementById('myDiv03').innerHTML = ' '+ this.myName + ', You are ' + this.myAge + ' years old<br>'
+       document.getElementById('myDiv06').innerHTML = ' '+ this.myName + ', You are ' + this.myAge + ' years old<br>'
     }
  }  // end class myAnimal
    myDog = new myAnimal('Super Mario Bros', 1)
@@ -144,3 +144,43 @@ Nintendo: <input type=text id="myText03" value="Best Game in 1985"><br>
 }">
 
 <div id="myDiv06">...</div>                                                                         
+
+
+<h4>Yellow</h4>
+Blue: <input type=text id="myText07" value="Gameboy in 1998"><br>
+<input type=button value="Show Character" onClick="{
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv07').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+   myDog = new myAnimal('Pokemon', 1)
+   myDog.myShow()
+                                                                            
+}">
+
+<div id="myDiv07">...</div>                                                                         
+
+
+<h4>90's Nostalga</h4>
+Moon: <input type=text id="myText08" value="Cat Names in 1998"><br>
+<input type=button value="Show Character" onClick="{
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv08').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+   myDog = new myAnimal('Luna', 1)
+   myDog.myShow()
+                                                                            
+}">
+
+<div id="myDiv08">...</div>                                                                         
