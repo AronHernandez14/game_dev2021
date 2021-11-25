@@ -84,3 +84,24 @@ Moon: <input type=text id="myText03" value="Cat Names in 1998"><br>
 }">
 
 <div id="myDiv03">...</div>                                                                         
+
+
+<h4>80's Sewers</h4>
+Ooze: <input type=text id="myText04" value="Turtle Names in 1989"><br>
+<input type=button value="Show Character" onClick="{
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv04').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+   myDog = new myAnimal('Flores', 2)
+   myDog.myShow()
+                                                                            
+}">
+
+<div id="myDiv04">...</div>                                                                         
+          
