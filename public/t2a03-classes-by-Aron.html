@@ -118,7 +118,7 @@ Atari: <input type=text id="myText05" value="Worst Game in 1983"><br>
        document.getElementById('myDiv05').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
     }
  }  // end class myAnimal
-   myDog = new myAnimal('E.T.', 0)
+   myDog = new myAnimal('E.T', 0)
    myDog.myShow()
                                                                             
 }">
@@ -135,10 +135,10 @@ Nintendo: <input type=text id="myText03" value="Best Game in 1985"><br>
        this.myAge = passAge;
     }
     myShow(){
-       document.getElementById('myDiv03').innerHTML = ' '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+       document.getElementById('myDiv03').innerHTML = ' '+ this.myName + ', You are ' + this.myAge + ' years old<br>'
     }
  }  // end class myAnimal
-   myDog = new myAnimal('Super Mario Bros,', 1)
+   myDog = new myAnimal('Super Mario Bros', 1)
    myDog.myShow()
                                                                             
 }">
