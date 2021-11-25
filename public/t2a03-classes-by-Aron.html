@@ -124,3 +124,23 @@ Atari: <input type=text id="myText05" value="Worst Game in 1983"><br>
 }">
 
 <div id="myDiv05">...</div>                                                                         
+
+
+<h4>1985</h4>
+Nintendo: <input type=text id="myText03" value="Best Game in 1985"><br>
+<input type=button value="Show Character" onClick="{
+ class myAnimal {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv03').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myAnimal
+   myDog = new myAnimal('Super Mario Bros,', 1)
+   myDog.myShow()
+                                                                            
+}">
+
+<div id="myDiv06">...</div>                                                                         
