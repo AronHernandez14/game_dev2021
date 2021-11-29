@@ -64,7 +64,8 @@ function myCheckHit(){
   myCheckHit()     // checks for all collisions
 }"><br><br>
   
-<input type=onKeyRight value="Right" onClick="{
+<input type=onKeyRight value="Right" onClick="{this.click(); event.preventDefault();}" onKeyRight="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-}" </b>   
-   
+  myCheckHit()     // checks for all collisions
+}"><br><br>
+  
