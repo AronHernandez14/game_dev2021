@@ -1,4 +1,4 @@
-Version 0.0.5
+Version 0.0.7
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg">
 
@@ -63,9 +63,8 @@ function myCheckHit(){
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
-  
-<input="{this.KeyRight(); event.preventDefault();}" onKeyRight="{
+   
+<input type=button value="Image Right"="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
-}"><br><br>
-  
+}"><br><br>   
