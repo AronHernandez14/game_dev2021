@@ -11,6 +11,14 @@ You use loops and variables to make fast fancy drawings <br><br>
    myContext.stroke();
 }">
 
+<input type=button value=".lineTo(50,900)" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 2;   
+   myContext.moveTo(40,10);
+   myContext.lineTo(50,900);
+   myContext.stroke();
+}">
+
 <input type=button value=".arc(95, 50, 40, 0, 2 * Math.PI)" onclick="{
    myContext.beginPath();
    myContext.lineWidth = 10;
