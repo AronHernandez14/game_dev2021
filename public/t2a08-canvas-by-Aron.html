@@ -11,11 +11,10 @@ You use loops and variables to make fast fancy drawings <br><br>
    myContext.stroke();
 }">
 
-<input type=button value=".lineTo(50,300,230,120)" onclick="{
-   myContext.beginPath();
-   myContext.lineWidth = 2;   
+<input type=button value=".quadraticCurveTo(50,300,230,120)" onclick="{
+   myContext.beginPath();   
    myContext.moveTo(40,10);
-   myContext.lineTo(50,300,230,120);
+   myContext.quadraticCurveTo(50,300,230,120);
    myContext.stroke();
 }">
 
