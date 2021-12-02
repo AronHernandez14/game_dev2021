@@ -67,17 +67,14 @@ function myCheckHit(){
 <input type=Button value="onKeyRight" onClick: "{this.KeyRight(); event.preventDefault();}" onClick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
-}"><br><br>   
-
-
-
+}"><br><br> 
  
 <script>
    let myInterval
  
 function myIsOnScreen(){
-   if (parseInt(document.getElementById('myDiv01').style.left) > 400) {
-     document.getElementById('myDiv01').style.left = '397px'
+   if (parseInt(document.getElementById('myImg01').style.left) > 400) {
+     document.getElementById('myImg01').style.left = '397px'
    }
 }
 
@@ -90,8 +87,8 @@ function myIsOnScreen(){
       clearInterval(myInterval)
       myInterval = setInterval(function(){
    
-         document.getElementById('myDiv01').style.left = 
-             parseInt(document.getElementById('myDiv01').style.left) + 3
+         document.getElementById('myImg01').style.left = 
+             parseInt(document.getElementById('myImg01').style.left) + 3
          myIsOnScreen()
       } ,20)
    }
@@ -100,14 +97,4 @@ function myIsOnScreen(){
 <h1 align=center>t1a13-onkeydown-fred</h1>
 Get WASD working, what about a second object controlled by arrows or IJKL<br>
 
-<div id="myDiv01" style="position:absolute; left:200; top:200; " >Fred</div>
-
-</body>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
+<div id="myImg01" style="position:absolute; left:200; top:200; " >Fred</div>
