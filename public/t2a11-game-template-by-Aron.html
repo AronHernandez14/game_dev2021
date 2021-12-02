@@ -80,7 +80,17 @@ function myIsOnScreen(){
       } ,20)
    }
                  
-                 
+<body onkeydown="{
+     let myKey = event.key
+ //  let myKey = String.toLowerCase(event.key)
+   if (myKey == 'a') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+         myIsOnScreen()
+      } ,20)
+   }
+                                  
                  
 }">
 
