@@ -94,7 +94,23 @@ function myIsOnScreen(){
    }
 }">
 
-<h1 align=center>t1a13-onkeydown-fred</h1>
-Get WASD working, what about a second object controlled by arrows or IJKL<br>
+<div id="myImg01" style="position:absolute; left:200; top:200; " >Fred</div>
+
+</script>
+
+<body onkeydown="{
+     let myKey = event.key
+ //  let myKey = String.toLowerCase(event.key)
+   if (myKey == 'a') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+   
+         document.getElementById('myImg01').style.right = 
+             parseInt(document.getElementById('myImg01').style.right) + 3
+         myIsOnScreen()
+      } ,20)
+   }
+}">
 
 <div id="myImg01" style="position:absolute; left:200; top:200; " >Fred</div>
+   
