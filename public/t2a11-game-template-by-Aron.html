@@ -40,34 +40,6 @@ function myCheckHit(){
    // more if statements here
 
 }
-
-
-</script>
-
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="ak.jpg">
-
-<input type=button value="Auto Background Left" onclick="{
-  clearInterval(myClock)
-  let myTemp = '100px 0px'
-  myClock = setInterval(function(){
-      myGlobalX -= 5
-      myTemp =  myGlobalX + 'px 0px'
-      document.getElementById('myBody').style.backgroundPosition = myTemp
-  }, 100)
-    
-}">
-
-
-<input type=button value="Image Right Fast Button onTouchStart"="{this.click(); event.preventDefault();}" onclick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
-}"><br><br>
-   
-<input type=Button value="onKeyRight" onClick: "{this.KeyRight(); event.preventDefault();}" onClick="{
-  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
-  myCheckHit()     // checks for all collisions
-}"><br><br> 
  
 <script>
    let myInterval
@@ -105,8 +77,8 @@ function myIsOnScreen(){
       clearInterval(myInterval)
       myInterval = setInterval(function(){
    
-         document.getElementById('myImg01').style.right = 
-             parseInt(document.getElementById('myImg01').style.right) + 3
+         document.getElementById('myImg01').style.left = 
+             parseInt(document.getElementById('myImg01').style.left) - 3
          myIsOnScreen()
       } ,20)
    }
