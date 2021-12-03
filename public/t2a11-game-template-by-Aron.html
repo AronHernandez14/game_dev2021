@@ -1,4 +1,4 @@
-Version 0.2.3
+Version 0.2.4
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg">
 
@@ -76,6 +76,7 @@ function myIsOnScreen(){
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+                 myCheckHit()
          myIsOnScreen()
       } ,)
    }
@@ -83,6 +84,7 @@ function myIsOnScreen(){
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+                 myCheckHit()
          myIsOnScreen()
       } ,)
    }
@@ -90,6 +92,7 @@ function myIsOnScreen(){
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
+                 myCheckHit()
          myIsOnScreen()
       } ,)
    }
@@ -97,6 +100,7 @@ function myIsOnScreen(){
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
+                 myCheckHit()
          myIsOnScreen()
       } ,)
    }                                  
