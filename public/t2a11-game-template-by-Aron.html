@@ -89,14 +89,14 @@ function myIsOnScreen(){
    if (myKey == 'w') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
          myIsOnScreen()
       } ,)
    }
    if (myKey == 's') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
          myIsOnScreen()
       } ,)
    }                                  
