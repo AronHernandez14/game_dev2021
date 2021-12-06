@@ -1,4 +1,4 @@
-Version 0.3.0
+Version 0.3.1
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg">
 
@@ -103,14 +103,38 @@ function myIsOnScreen(){
          myIsOnScreen()
       } ,)
    }                                  
-   if (myKey == 'Keyup') {
+   if (keyup == 'd') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
-         document.getElementById('myImg01') = parseInt.document.getElementById('myImg01') + 0
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 0
                  myCheckHit()
          myIsOnScreen()
       } ,)
-   }                                                    
+   }
+   if (keyup == 'a') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 0
+                 myCheckHit()
+         myIsOnScreen()
+      } ,)
+   }
+   if (keyup == 'w') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 0
+                 myCheckHit()
+         myIsOnScreen()
+      } ,)
+   }
+   if (keyup == 's') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 0
+                 myCheckHit()
+         myIsOnScreen()
+      } ,)
+   }                                                                                                     
 }">
    
 <div id="myImg01" style="position:absolute; left:200; top:200; " ></div>
