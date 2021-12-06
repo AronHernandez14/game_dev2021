@@ -103,7 +103,22 @@ function myIsOnScreen(){
          myIsOnScreen()
       } ,)
    }                                  
-                 
+   if (myKey == 'Space') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 0
+                 myCheckHit()
+         myIsOnScreen()
+      } ,)
+   }   
+   if (myKey == 'Space') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.top) + 0
+                 myCheckHit()
+         myIsOnScreen()
+      } ,)
+   }                                                 
 }">
    
 <div id="myImg01" style="position:absolute; left:200; top:200; " ></div>
