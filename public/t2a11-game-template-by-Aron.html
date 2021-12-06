@@ -1,4 +1,4 @@
-Version 0.3.2
+Version 0.3.3
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg">
 
@@ -66,6 +66,18 @@ function myIsOnScreen(){
      document.getElementById('myImg01').style.left = '599px'
    }
 }
+if (parseInt(document.getElementById('myImg01').style.left) > 201) {
+     document.getElementById('myImg01').style.left = '200px'
+   }
+}
+if (parseInt(document.getElementById('myImg01').style.top) > 201) {
+     document.getElementById('myImg01').style.top = '200px'
+   }
+}
+if (parseInt(document.getElementById('myImg01').style.top) > 600) {
+     document.getElementById('myImg01').style.top = '599px'
+   }
+}
 </script>
 
 <body onkeydown="{
@@ -102,39 +114,7 @@ function myIsOnScreen(){
                  myCheckHit()
          myIsOnScreen()
       } ,)
-   }                                  
-   if (keyUp == 'd') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 0
-                 myCheckHit()
-         myIsOnScreen()
-      } ,)
-   }
-   if (keyUp == 'a') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 0
-                 myCheckHit()
-         myIsOnScreen()
-      } ,)
-   }
-   if (keyUp == 'w') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 0
-                 myCheckHit()
-         myIsOnScreen()
-      } ,)
-   }
-   if (keyUp == 's') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 0
-                 myCheckHit()
-         myIsOnScreen()
-      } ,)
-   }                                                                                                     
+   }                                                                                                                                    
 }">
    
 <div id="myImg01" style="position:absolute; left:200; top:200; " ></div>
