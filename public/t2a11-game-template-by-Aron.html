@@ -63,10 +63,16 @@ function myCheckHit(){
 function myIsOnScreen(){
  if (parseInt(document.getElementById('myImg01').style.left) > 1820) {
      document.getElementById('myImg01').style.left = '1819px'
-   }   
+   }
+  if (parseInt(document.getElementById('myImg01').style.left) > 0) {
+     document.getElementById('myImg01').style.left = '1px'
+   }     
  if (parseInt(document.getElementById('myImg01').style.top) > 890) {
      document.getElementById('myImg01').style.top = '889px'
    }   
+ if (parseInt(document.getElementById('myImg01').style.top) > 0) {
+     document.getElementById('myImg01').style.top = '1px'
+   }     
 }
 </script>
 
