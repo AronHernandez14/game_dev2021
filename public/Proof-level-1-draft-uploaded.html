@@ -1,4 +1,4 @@
-Version 0.4.6
+Version 0.4.7
 
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="Wave.jpg">
 
@@ -68,10 +68,10 @@ function myIsOnScreen(){
  if (parseInt(document.getElementById('myImg01').style.top) > 300) {    //890
      document.getElementById('myImg01').style.top = '889px'
    }  
-if (parseInt(document.getElementById('myImg01').style.left) > 100) {
+if (parseInt(document.getElementById('myImg01').style.left) < 100) {
      document.getElementById('myImg01').style.left = '20px'
    }   
- if (parseInt(document.getElementById('myImg01').style.top) > 100) {
+ if (parseInt(document.getElementById('myImg01').style.top) < 100) {
      document.getElementById('myImg01').style.top = '20px'
    }     
 }
