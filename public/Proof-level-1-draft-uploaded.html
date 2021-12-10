@@ -1,4 +1,4 @@
-Version 0.4.7
+Version 0.4.8
 
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="Wave.jpg">
 
@@ -31,7 +31,7 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
-   console.log(document.getElementById('myImg01').style.left)
+     console.log(document.getElementById('myImg01').style.left + " : " + document.getElementById('myImg01').style.top)
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')
       document.getElementById('myImg01').style.left = '10px'
@@ -62,17 +62,17 @@ function myCheckHit(){
    let myInterval
  
 function myIsOnScreen(){
- if (parseInt(document.getElementById('myImg01').style.left) > 600) {    //1820
+ if (parseInt(document.getElementById('myImg01').style.left)  > 1820 ) {    //1820
      document.getElementById('myImg01').style.left = '1819px'
    }   
- if (parseInt(document.getElementById('myImg01').style.top) > 300) {    //890
+ if (parseInt(document.getElementById('myImg01').style.top) > 890 ) {    //890
      document.getElementById('myImg01').style.top = '889px'
    }  
-if (parseInt(document.getElementById('myImg01').style.left) < 100) {
-     document.getElementById('myImg01').style.left = '20px'
+if (parseInt(document.getElementById('myImg01').style.left) < 100 ) {
+     document.getElementById('myImg01').style.left = '120px'
    }   
- if (parseInt(document.getElementById('myImg01').style.top) < 100) {
-     document.getElementById('myImg01').style.top = '20px'
+ if (parseInt(document.getElementById('myImg01').style.top) < 100 ) {
+     document.getElementById('myImg01').style.top = '120px'
    }     
 }
 </script>
