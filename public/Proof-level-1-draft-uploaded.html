@@ -31,6 +31,7 @@ function myHitOther(my1,my2){
 
 
 function myCheckHit(){
+   console.log(document.getElementById('myImg01').style.left)
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')
       document.getElementById('myImg01').style.left = '10px'
@@ -61,10 +62,10 @@ function myCheckHit(){
    let myInterval
  
 function myIsOnScreen(){
- if (parseInt(document.getElementById('myImg01').style.left) > 1820) {
+ if (parseInt(document.getElementById('myImg01').style.left) > 600) {    //1820
      document.getElementById('myImg01').style.left = '1819px'
    }   
- if (parseInt(document.getElementById('myImg01').style.top) > 890) {
+ if (parseInt(document.getElementById('myImg01').style.top) > 300) {    //890
      document.getElementById('myImg01').style.top = '889px'
    }  
 if (parseInt(document.getElementById('myImg01').style.left) > 100) {
