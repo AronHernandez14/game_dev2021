@@ -1,4 +1,4 @@
-Version 0.5.5
+Version 0.5.6
 
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="Wave.jpg">
 
@@ -112,7 +112,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }   
-   if (myKey == 'right arrow') {
+   if (myKey == 'rightArrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
@@ -120,7 +120,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }
-   if (myKey == 'left arrow') {
+   if (myKey == 'leftArrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
@@ -128,7 +128,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }
-   if (myKey == 'up arrow') {
+   if (myKey == 'upArrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
@@ -136,7 +136,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }
-   if (myKey == 'down arrow') {
+   if (myKey == 'downArrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
