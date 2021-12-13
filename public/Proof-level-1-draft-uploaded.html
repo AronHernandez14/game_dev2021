@@ -112,7 +112,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }   
-   if (myKey == '39') {
+   if (myKey == 'right arrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
@@ -120,7 +120,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }
-   if (myKey == '37') {
+   if (myKey == 'left arrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
@@ -128,7 +128,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }
-   if (myKey == '38') {
+   if (myKey == 'up arrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
@@ -136,7 +136,7 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,5)
    }
-   if (myKey == '40') {
+   if (myKey == 'down arrow') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
