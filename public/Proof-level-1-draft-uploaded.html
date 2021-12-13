@@ -111,7 +111,39 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
                  myCheckHit()
          myIsOnScreen()
       } ,8)
-   }                                                                                                                                    
+   }   
+   if (myKey == '39') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,8)
+   }
+   if (myKey == '37') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,8)
+   }
+   if (myKey == '38') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,8)
+   }
+   if (myKey == '40') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,8)
+   }                                                     
 }">
    
 <div id="myImg01" style="position:absolute; left:200; top:200; " ></div>
