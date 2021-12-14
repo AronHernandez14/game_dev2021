@@ -118,26 +118,6 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
          myIsOnScreen()
       } ,3)
    } 
-    if (myKey == 'q') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.left) + 3           
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
-   if (myKey == 'e') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.left) - 3           
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }                     
 }">
    
 <div id="myImg01" style="position:absolute; left:200; top:200; " ></div>
