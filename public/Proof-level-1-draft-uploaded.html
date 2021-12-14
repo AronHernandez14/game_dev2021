@@ -1,4 +1,4 @@
-Version 0.6.8
+Version 0.6.9
 
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="Wave.jpg">
 
@@ -79,7 +79,19 @@ if (parseInt(document.getElementById('myImg01').style.left) < 0 ) {
    }   
  if (parseInt(document.getElementById('myImg01').style.top) < 0 ) {
      document.getElementById('myImg01').style.top = '1px'
-   }     
+   } 
+  if (parseInt(document.getElementById('myImg02').style.left)  > 1820 ) {    //1820
+     document.getElementById('myImg02').style.left = '1819px'
+   }   
+ if (parseInt(document.getElementById('myImg02').style.top) > 890 ) {    //890
+     document.getElementById('myImg02').style.top = '889px'
+   }  
+if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
+     document.getElementById('myImg02').style.left = '1px'
+   }   
+ if (parseInt(document.getElementById('myImg02').style.top) < 0 ) {
+     document.getElementById('myImg02').style.top = '1px'
+   }       
 }
 </script>
 
