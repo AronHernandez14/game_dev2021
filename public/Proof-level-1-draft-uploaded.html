@@ -1,4 +1,4 @@
-Version 0.7.2
+Version 0.7.3
 
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="Wave.jpg">
 
@@ -50,7 +50,7 @@ function myCheckHit(){
 <img id="myImg04" style="position:absolute; width:1px; height:969px; top:0px; left:0px;" src="GreenScreen.jpg.jpg">
 <img id="myImg05" style="position:absolute; width:1920px; height:1px; top:0px; left:0px;" src="GreenScreen.jpg.jpg">
 <img id="myImg06" style="position:absolute; width:1px; height:969px; top:0px; left:1919px;" src="GreenScreen.jpg.jpg">
-<img id="myImg07" style="position:absolute; width:100px; height:80px; top:500px; left:500px;"  src="47.jpg">
+<img id="myImg07" style="position:absolute; width:100px; height:80px; top:500px; left:500px;"  src="ak.jpg">
   
   
 <input type=button value="Auto Background Left" onclick="{
@@ -167,10 +167,15 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
 }">   
 
 <Script>   
-myInterval = setInterval(function(){
-         document.getElementById('myImg07').style.top = parseInt(document.getElementById('myImg02').style.top) + 3
+<input type=button value="Auto Background Left" onclick="{
+   clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + 3
                  myCheckHit()
          myIsOnScreen()
+      } ,3)
+   } 
+}">   
 
    
 </Script>   
