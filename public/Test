@@ -1,0 +1,58 @@
+//movement (x)
+    var maxSpeed = 12.5; 
+    var xForce = 0;
+    var kingXPos = 0;
+
+    //movement (y)
+    var yForce = 0;
+    var kingYPos = 202;
+
+    //LV design
+    var floorHeight = 150;
+
+var draw = function() {
+
+//background and basics
+    background(255, 0, 0);
+    image(getImage("creatures/Winston"), kingXPos, kingYPos, 50, 50);
+
+//level features (only the floor right now)
+    fill(0, 0, 0);
+    rect(0, 250, 400, floorHeight);
+
+//right movement
+        if (keyIsPressed && keyCode === RIGHT) {
+    kingXPos = kingXPos + xForce;
+    xForce = xForce + 0.25;
+    if (xForce >= maxSpeed && keyIsPressed) {
+      xForce = maxSpeed;
+    }
+  }
+
+//left movement
+  if (keyIsPressed && keyCode === LEFT) {
+    kingXPos = kingXPos + xForce;
+    xForce = xForce - 0.25;
+    if (xForce <= -maxSpeed && keyIsPressed) {
+      xForce = -maxSpeed;
+    }
+  }
+
+//jump (not yet functional)
+  if (keyTyped && keyCode === UP && kingYPos === floorHeight + 50) {
+      kingYPos = kingYPos + yForce;
+      yForce = yForce - 0.5;
+
+  }
+
+//other physics
+  if (!keyIsPressed) {
+    kingXPos = kingXPos + xForce;
+    if (xForce > 0) {
+      xForce = xForce - 0.25;
+    } 
+    else if (xForce < 0) {
+      xForce = xForce + 0.25;
+    }
+  }
+};
