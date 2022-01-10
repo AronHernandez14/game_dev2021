@@ -1,4 +1,4 @@
-Version 0.9.1
+Version 0.9.2
 
 <body id="myBody" style="background-repeat:repeat; background-size: 100%" background="Wave.jpg">
 
@@ -78,7 +78,7 @@ function myCheckHit(){
   myClock = setInterval(function(){
       myGlobalX -= 5
       myTemp =  myGlobalX + 'px 0px'
-      document.getElementById('myImg02').style.Position = myTemp
+      document.getElementById('myImg02').style.left = myTemp
   }, )
                                                
 }">
@@ -148,40 +148,6 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   } 
-   
-   
-   if (myKey == 'l') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
-   if (myKey == 'j') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) - 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
-   if (myKey == 'i') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) - 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
-   if (myKey == 'k') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + 3
                  myCheckHit()
          myIsOnScreen()
       } ,3)
