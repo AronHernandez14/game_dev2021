@@ -127,12 +127,6 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
                  myCheckHit()
          myIsOnScreen()
       } ,3)
-     clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + 5
-                 myCheckHit()
-        myIsOnScreen()            
-     } ,5)            
    }
    if (myKey == 'w') {
       clearInterval(myInterval)
@@ -154,7 +148,7 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
 }">    
 
 <Script>
-<loop onkeydown="{
+<loop onkeypress="{
 if (myKey == 'a') {
       clearInterval(myInterval)
       myInterval = setInterval(loop(){
