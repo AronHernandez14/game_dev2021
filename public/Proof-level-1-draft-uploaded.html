@@ -149,14 +149,12 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
 
 <Script>
 <loop onkeypress="{
-if (myKey == 'a') {
-      clearInterval(myInterval)
-      myInterval = setInterval(loop(){
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+  clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + 5
                  myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
+        myIsOnScreen()            
+     } ,5)              
 }">
    
 <div id="myImg01" style="position:absolute; left:200; top:200; " ></div>
