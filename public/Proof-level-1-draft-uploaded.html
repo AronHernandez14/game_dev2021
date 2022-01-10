@@ -147,14 +147,14 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
                  
 }">    
 
-<input button="Start Game" onclick="{
+<onclick="{
      clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + 5
                  myCheckHit()
         myIsOnScreen()
 }">
-<input button="Start Game" onclick="{
+<onclick="{
   clearInterval(myClock)
   let myTemp = '100px 0px'
   myClock = setInterval(function(){
