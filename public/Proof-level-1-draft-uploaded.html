@@ -109,18 +109,6 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
    }                  
 }
 </script>
-
-<body onmousemove="{
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) - 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }      
-      
-      
-
 <body onkeydown="{
      let myKey = event.key
  //  let myKey = String.toLowerCase(event.key)
@@ -158,7 +146,45 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
    }  
                  
 }">    
-   
+      
+</script>
+<body onkeydown="{
+     let myKey = event.key
+ //  let myKey = String.toLowerCase(event.key)
+   if (myKey == 'd') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }
+   if (myKey == 'a') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }
+   if (myKey == 'w') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }
+   if (myKey == 's') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }  
+                 
+}">       
 <div id="myImg01" style="position:absolute; left:200; top:200; " ></div>
 
 </script>
