@@ -185,11 +185,6 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
    }  
                  
 }"> 
-function startRace() {
-  animateRacer("player1", true);
-  animateRacer("player2", true);
-}
-
 function animateRacer(myImg02, reset) {
   var elem = document.getElementById(myImg02);
   var pos = parseInt(elem.style.left, 10);
@@ -216,10 +211,8 @@ body {
   <button onclick="startRace()">Start Race</button>
 </p>
 
-<div id="container">
   <div id="myImg02" class="player"></div>
   <div id="myImg07" class="player"></div>
-</div>      
 
 </script>
 
