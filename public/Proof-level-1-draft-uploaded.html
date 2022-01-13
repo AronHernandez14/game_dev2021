@@ -158,7 +158,7 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.left) + 3      
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3      
                  myCheckHit()
          myIsOnScreen()
       } ,10)
