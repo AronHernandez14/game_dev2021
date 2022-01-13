@@ -150,45 +150,7 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
 }">    
       
 </script>
-<body onkeydown="{
-     let myKey = event.key
- //  let myKey = String.toLowerCase(event.key)
-   if (myKey == 'd') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
-   if (myKey == 'a') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
-   if (myKey == 'w') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }
-   if (myKey == 's') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,3)
-   }  
-                 
-}"> 
-      
-</script>
+
 <body onkeyup="{
      let myKey = event.key
  //  let myKey = String.toLowerCase(event.key)
@@ -200,40 +162,30 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
          myIsOnScreen()
       } ,3)
    }
+  if (myKey == 'a') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }             
+   if (myKey == 'w') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }
+   if (myKey == 's') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }            
 }">
       
 </script>      
-      
-<script >
-<!--
-function reset1(){
-clearTimeout(my_time);
-document.getElementById('Quick Enemy.png').style.left= "500px";
-document.getElementById('Quick Enemy.png').style.top= "100px";
-document.getElementById("msg").innerHTML="";
-}
-
-function disp(){
-var step=1; // Change this step value
-//alert("Hello");
-var y=document.getElementById('Quick Enemy.png').offsetTop;
-var x=document.getElementById('Quick Enemy.png').offsetLeft;
-document.getElementById("msg").innerHTML="X: " + x  + " Y : " + y
-if(y < 400 ){y= y +step;
-document.getElementById('Quick Enemy.png').style.top= y + "px"; // vertical movment
-}else{
-if(x < 800){x= x +step;
-document.getElementById('Quick Enemy.png').style.left= x + "px"; // horizontal movment
-}
-}
-//////////////////////
-}
-
-function timer(){
-disp();
-my_time=setTimeout('timer()',10);
-}
-//-->
-</script>      
-      
-<div id='msg'></div>
