@@ -161,14 +161,6 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
                  myCheckHit()
          myIsOnScreen()
       } ,10)
-   }
-  if (myKey == 'a') {
-      clearInterval(myInterval)
-      myInterval = setInterval(function(){
-         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
-                 myCheckHit()
-         myIsOnScreen()
-      } ,10)
    }             
    if (myKey == 'w') {
       clearInterval(myInterval)
