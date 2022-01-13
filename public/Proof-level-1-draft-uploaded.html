@@ -189,7 +189,21 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
 }"> 
       
 </script>
-
+<body onkeyup="{
+     let myKey = event.key
+ //  let myKey = String.toLowerCase(event.key)
+   if (myKey == 'd') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
+                 myCheckHit()
+         myIsOnScreen()
+      } ,3)
+   }
+}">
+      
+</script>      
+      
 <script >
 <!--
 function reset1(){
