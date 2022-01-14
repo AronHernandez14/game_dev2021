@@ -154,7 +154,7 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
 <body onkeyup="{
      let myKeys = event.key
  //  let myKeys = String.toLowerCase(event.key)
-   if (myKeys == 'a + s') {
+   if (myKeys == 'A') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
@@ -162,7 +162,34 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
                  myCheckHit()
          myIsOnScreen()
       } ,6)
-   }           
+   }     
+   if (myKeys == 'D') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 1      
+                 myCheckHit()
+         myIsOnScreen()
+      } ,6)
+   }
+   if (myKeys == 'W') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 1
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) -3      
+                 myCheckHit()
+         myIsOnScreen()
+      } ,6)
+   } 
+   if (myKeys == 'S') {
+      clearInterval(myInterval)
+      myInterval = setInterval(function(){
+         document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 1
+         document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3     
+                 myCheckHit()
+         myIsOnScreen()
+      } ,6)
+   }                       
 }">
       
 </script>      
