@@ -80,12 +80,12 @@ function myCheckHit(){
                                                                                       
  <input type=button value="Start Game" onclick="{
   clearInterval(myClock)
-  let myTemp = '0px 0px'
+  let myTemp = '0px'
   myClock = setInterval(function(){
       myGlobalX -= 5
       myTemp =  myGlobalX + 'px 10px'
       document.getElementById('myBody').style.backgroundPosition = myTemp
-  }, 1)                                            
+  },)                                            
 }">
    
    
