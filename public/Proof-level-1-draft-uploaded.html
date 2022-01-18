@@ -49,6 +49,20 @@ function myCheckHit(){
    
 
 }
+      
+function myCheckHit(){
+   if ( myHitOther('myImg01','myImg09') ){
+       alert('next level')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 'Proof-level-2-draft-uploaded.html'  // go to your next level
+   }
+
+
+   // more if statements here like the above
+
+
+
+}  // end of myCheckHit()
 
 
 </script>
@@ -63,17 +77,15 @@ function myCheckHit(){
 <img id="myImg08" style="position:absolute; width:1920px; height:350px; top:969px; left:0px;" src="Waves Background bottom.png">  
 <img id="myImg09" style="position:absolute; width:80px; height:80px; top:600px; left:1600px;" src="Rock.png">
 <img id="myImg10" style="position:absolute; width:1920px; height:1px; top:350px; left:0px;" src="MT.png">
-   
-   
-<input type=button value="Start Game" onclick="{
+                                                                                      
+ <input type=button value="Start Game" onclick="{
   clearInterval(myClock)
   let myTemp = '100px 0px'
   myClock = setInterval(function(){
       myGlobalX -= 5
       myTemp =  myGlobalX + 'px 0px'
-      document.getElementById('myBody').style.backgroundPosition = myTemp                                         
-  }, ))                                                                                    
-                                               
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)                                            
 }">
    
    
