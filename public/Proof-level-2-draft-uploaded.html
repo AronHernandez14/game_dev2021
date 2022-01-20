@@ -148,7 +148,7 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
 <body onkeyup="{
      let myKey = event.key
  //  let myKey = String.toLowerCase(event.key)
-   if (myKey == 'a') {
+   if (myKey == 'd') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg01').style.left) + 3
@@ -156,7 +156,7 @@ if (parseInt(document.getElementById('myImg02').style.left) < 0 ) {
          myIsOnScreen()
       } ,1)
    }
-   if (myKey == 'd') {
+   if (myKey == 'a') {
       clearInterval(myInterval)
       myInterval = setInterval(function(){
          document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg01').style.left) - 3
